@@ -1,0 +1,13 @@
+{
+  "name": "Learning-WebGL",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/zyuquan/Learning-WebGL.git",
+  "author": "zyuquan <2084728202@qq.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@three-ts/orbit-controls": "^1.4.7",
+    "stats": "^1.0.0",
+    "three": "^0.141.0"
+  }
+}
