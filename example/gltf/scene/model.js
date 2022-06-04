@@ -10,7 +10,7 @@ var model = new THREE.Group();
 // 创建一个GLTF加载器
 var loader = new GLTFLoader();
 
-loader.load("./scene/shanghai.glb", function(gltf) {
+loader.load("../../static/glb/shanghai.glb", function(gltf) {
     console.log("gltf对象结构", gltf);
     // 设置地面材质
     var Floor = gltf.scene.getObjectByName("地面");

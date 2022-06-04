@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>导出.glb文件</title>
+    <link rel="stylesheet" href="../../static/css/reset.css">
+    <style>
+        body {
+            position: relative;
+        }
+        .button {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100px;
+            height: 30px;
+            background-color: #0b55ab;
+            color: #ffffff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+<script type="module">
+    
+</script>
+<script type="module">
+    import { renderer } from "./index.js";
+    import { model } from "./scene/model.js";
+    import { exportGLTF } from "./export.js";
+    document.body.appendChild(renderer.domElement);
+    var button = document.createElement("button");
+    button.innerHTML = "导出";
+    button.className = "button";
+    document.body.appendChild(button);
+    button.onclick = function() {
+        exportGLTF(model);
+    }
+</script>
+</html>

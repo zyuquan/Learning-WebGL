@@ -1,6 +1,19 @@
 ### 通过数据文件创建模型
 
+### shp转GeoJSON
 
+https://mapshaper.org/  一个在线转格式平台
+
+github代码地址：https://github.com/mbloch/mapshaper
+
+文章提到过：https://blog.csdn.net/gisboygogogo/article/details/74056563
+
+
+### threejs加载解析shp的库shp.js
+
+github：https://github.com/kig/shp.js/
+
+链接：https://www.bram.us/2012/07/30/shp-js-javascript-shapefile-parser/
 
 ### 多边形平面（ShapeGeometry）
 
