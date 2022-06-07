@@ -1,3 +1,5 @@
+### 加载数据模型
+
 ### 数据问题
 
 一般来说对于前端工程师，只需要从公司web服务器请求数据，然后解析数据渲染三维场景即可，至于公司数据来源，可能是公司自己测绘获取，也可能是甲方提供，也可能是物联网设备实时上传。
@@ -46,36 +48,4 @@ github：https://github.com/kig/shp.js/
 
 ```js
   scene.add(gltf.scene)
-```
-
-### 导出.glb模型文件（GLTFExporter）
-
-```js
-function exportGLTF(input) {
-    var gltfExporter = new GLTFExporter();
-    var options = {
-        trs: false,
-        onlyVisible: true,
-        truncateDrawRange: true,
-        binary: true, //是否导出.gltf的二进制格式.glb  控制导出.gltf还是.glb
-        forceIndices: false,
-        forcePowerOfTwoTextures: false
-    };
-    gltfExporter.parse(input, function (result) {
-        if (result instanceof ArrayBuffer) {
-            save(new Blob([result], {type: 'application/octet-stream'}), 'scene.glb');
-        } else {
-            var output = JSON.stringify(result, null, 2);
-            save(new Blob([output], {type: 'text/plain'}), 'scene.gltf');
-        }
-    }, options);
-};
-
-var link = document.createElement('a');
-link.style.display = 'none';
-function save(blob, filename) {
-    link.href = URL.createObjectURL(blob);
-    link.download = filename;
-    link.click();
-}
 ```
