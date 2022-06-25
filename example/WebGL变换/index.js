@@ -4,8 +4,9 @@ import { createBuffer } from "./createBuffer.js";
 
 var VSHADER_SOURCE = `
   attribute vec3 a_Position;
+  uniform float u_scale;
   void main() {
-    gl_Position = vec4(a_Position, 1.0);
+    gl_Position = vec4(a_Position.x*u_scale, a_Position.y*u_scale, a_Position.z*u_scale, 1.0);
   }
 `;
 
@@ -36,6 +37,7 @@ function main() {
   var fshader = initShader(gl, gl.FRAGMENT_SHADER, FSHADER_SOURCE);
   // 着色器程序准备
   var program = createProgram(gl, vshader, fshader);
+
   // 缓冲区准备
   var buffer = createBuffer(gl, vertexArray);
   // 元素字节数，在 Float32Array 的情况下返回 4
@@ -46,6 +48,11 @@ function main() {
   gl.vertexAttribPointer(a_Position, 3, gl.FLOAT, false, 0, 0);
   // 激活属性数组列表中的每一个属性
   gl.enableVertexAttribArray(a_Position);
+
+  // 缩放
+  var u_scale = gl.getUniformLocation(program, "u_scale");
+  gl.uniform1f(u_scale, .5);
+  // gl.enableVertexAttribArray(u_scale);
 
   // 设置画布清空颜色
   gl.clearColor(0.0, 0.0, 0.0, 1.0);

@@ -37,5 +37,23 @@
    */
   var a_Position = gl.getAttribLocation(program, name);
 ```
-- 
+- 从缓冲区获取数据
+``` js
+  /**
+   * index 要修改的顶点属性的坐标索引
+   * size 每个顶点属性的组成数量
+   * type 每个元素的数据类型
+   * normalized 当转为浮点数时是否应该将整数数值归一化到特定的范围
+   * stride 以字节为单位指定连续顶点属性开始之间的偏移量
+   * offset 指定顶点属性数组第一部分的字节偏移量
+   */
+  gl.vertexAttribPointer(index, size, type, normalized, stride, offset);
+```
+- 激活数组列表中的属性
+```js
+  /**
+   * index 索引
+   */
+  gl.enableVertexAttribArray(index);
+```
   
