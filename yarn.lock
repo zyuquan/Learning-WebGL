@@ -3,30 +3,30 @@
 
 
 "@three-ts/orbit-controls@^1.4.7":
-  version "1.4.7"
-  resolved "https://registry.yarnpkg.com/@three-ts/orbit-controls/-/orbit-controls-1.4.7.tgz#5bfda19bfb148ac0e494bd2ae8e9e5fcf640fa2a"
-  integrity sha512-1OVZnc2VTHCoHberL50LBbltjnqVpOBhmuJwKPqzn6sThQwvVU1E13cpuJ2SWWOMoMLF+4hE3ICi4KHsZA/CJw==
+  "integrity" "sha512-1OVZnc2VTHCoHberL50LBbltjnqVpOBhmuJwKPqzn6sThQwvVU1E13cpuJ2SWWOMoMLF+4hE3ICi4KHsZA/CJw=="
+  "resolved" "https://registry.npmjs.org/@three-ts/orbit-controls/-/orbit-controls-1.4.7.tgz"
+  "version" "1.4.7"
   dependencies:
-    three "^0.126.1"
+    "three" "^0.126.1"
 
-commander@0.5.2:
-  version "0.5.2"
-  resolved "https://registry.yarnpkg.com/commander/-/commander-0.5.2.tgz#f270326709a115a126cfed5623852439b8e4a3b5"
-  integrity sha512-/IKo89++b1UhClEhWvKk00gKgw6iwvwD8TOPTqqN9AyvjgPCnf9OrjnDNY3dPDOj+K+OhN9SRjYQH0AfX0bROw==
+"commander@0.5.2":
+  "integrity" "sha512-/IKo89++b1UhClEhWvKk00gKgw6iwvwD8TOPTqqN9AyvjgPCnf9OrjnDNY3dPDOj+K+OhN9SRjYQH0AfX0bROw=="
+  "resolved" "https://registry.npmjs.org/commander/-/commander-0.5.2.tgz"
+  "version" "0.5.2"
 
-stats@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/stats/-/stats-1.0.0.tgz#4a3f63d81bd52cdecee313dacf1572aff57b7d29"
-  integrity sha1-Sj9j2BvVLN7O4xPazxVyr/V7fSk=
+"stats@^1.0.0":
+  "integrity" "sha1-Sj9j2BvVLN7O4xPazxVyr/V7fSk= sha512-YmKiMSrDaYA8Iu8/mPbZQmQLfzUrCstea60zPLkBMjpUveRh89GLipU/7AuMRAAX3aMmnseSuJtkgpPv29VoqA=="
+  "resolved" "https://registry.npmjs.org/stats/-/stats-1.0.0.tgz"
+  "version" "1.0.0"
   dependencies:
-    commander "0.5.2"
+    "commander" "0.5.2"
 
-three@^0.126.1:
-  version "0.126.1"
-  resolved "https://registry.yarnpkg.com/three/-/three-0.126.1.tgz#cf4e4e52060fd952f6f0d5440cbd422c66bc4be7"
-  integrity sha512-eOEXnZeE1FDV0XgL1u08auIP13jxdN9LQBAEmlErYzMxtIIfuGIAZbijOyookALUhqVzVOx0Tywj6n192VM+nQ==
+"three@^0.126.1":
+  "integrity" "sha512-eOEXnZeE1FDV0XgL1u08auIP13jxdN9LQBAEmlErYzMxtIIfuGIAZbijOyookALUhqVzVOx0Tywj6n192VM+nQ=="
+  "resolved" "https://registry.npmjs.org/three/-/three-0.126.1.tgz"
+  "version" "0.126.1"
 
-three@^0.141.0:
-  version "0.141.0"
-  resolved "https://registry.yarnpkg.com/three/-/three-0.141.0.tgz#16677a12b9dd0c3e1568ebad0fd09de15d5a8216"
-  integrity sha512-JaSDAPWuk4RTzG5BYRQm8YZbERUxTfTDVouWgHMisS2to4E5fotMS9F2zPFNOIJyEFTTQDDKPpsgZVThKU3pXA==
+"three@^0.141.0":
+  "integrity" "sha512-JaSDAPWuk4RTzG5BYRQm8YZbERUxTfTDVouWgHMisS2to4E5fotMS9F2zPFNOIJyEFTTQDDKPpsgZVThKU3pXA=="
+  "resolved" "https://registry.npmjs.org/three/-/three-0.141.0.tgz"
+  "version" "0.141.0"

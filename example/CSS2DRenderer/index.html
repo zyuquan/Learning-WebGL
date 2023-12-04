@@ -10,6 +10,14 @@
 <body>
     
 </body>
+<script type="importmap">
+    {
+      "imports": {
+        "three": "../../node_modules/three/build/three.module.js",
+        "three/addons/": "./jsm/"
+      }
+    }
+</script>
 <script type="module">
     import { renderer, cssRenderer } from "./index.js";
     document.body.appendChild(renderer.domElement);

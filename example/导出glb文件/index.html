@@ -25,8 +25,13 @@
 <body>
     
 </body>
-<script type="module">
-    
+<script type="importmap">
+    {
+    "imports": {
+            "three": "../../node_modules/three/build/three.module.js",
+            "three/addons/": "./jsm/"
+        }
+    }
 </script>
 <script type="module">
     import { renderer } from "./index.js";
